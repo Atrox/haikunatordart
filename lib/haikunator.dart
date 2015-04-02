@@ -10,7 +10,7 @@ import 'dart:math' show Random;
 
 class Haikunator {
   static final Random rndm = new Random();
-  static final ADJECTIVES = [
+  static final adjectives = [
     "autumn", "hidden", "bitter", "misty", "silent", "empty", "dry", "dark",
     "summer", "icy", "delicate", "quiet", "white", "cool", "spring", "winter",
     "patient", "twilight", "dawn", "crimson", "wispy", "weathered", "blue",
@@ -24,7 +24,7 @@ class Haikunator {
     "steep", "flat", "square", "round", "mute", "noisy", "hushy", "raspy", "soft",
     "shrill", "rapid", "sweet", "curly", "calm", "jolly", "fancy", "plain", "shinny"
   ];
-  static final NOUNS = [
+  static final nouns = [
     "waterfall", "river", "breeze", "moon", "rain", "wind", "sea", "morning",
     "snow", "lake", "sunset", "pine", "shadow", "leaf", "dawn", "glitter",
     "forest", "hill", "cloud", "meadow", "sun", "glade", "bird", "brook",
@@ -45,8 +45,8 @@ class Haikunator {
     
     if (tokenHex) tokenChars = "0123456789abcdef";
     
-    adjective = ADJECTIVES[rndm.nextInt(ADJECTIVES.length)];
-    noun = NOUNS[rndm.nextInt(NOUNS.length)];
+    adjective = adjectives[rndm.nextInt(adjectives.length)];
+    noun = nouns[rndm.nextInt(nouns.length)];
     
     for(var i = 0; i < tokenLength; i++) {
       token += tokenChars[rndm.nextInt(tokenChars.length)];
