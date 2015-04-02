@@ -1,4 +1,4 @@
-dalanguage: dart
+language: dart
 dart:
   - stable
   - dev
