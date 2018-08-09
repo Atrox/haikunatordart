@@ -3,7 +3,7 @@
 
 library Haikunator.test;
 
-import 'package:unittest/unittest.dart';
+import 'package:test/test.dart';
 import 'package:haikunator/haikunator.dart';
 
 main() {
