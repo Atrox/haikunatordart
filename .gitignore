@@ -1,7 +1,8 @@
-.buildlog
-.DS_Store
-.idea
-.pub/
+### Dart ###
+# See https://www.dartlang.org/guides/libraries/private-files
+
+# Files and directories created by pub
+.dart_tool/
+.packages
 build/
-packages
 pubspec.lock
